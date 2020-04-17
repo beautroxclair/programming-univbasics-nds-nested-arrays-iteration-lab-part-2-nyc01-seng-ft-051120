@@ -1,4 +1,5 @@
 def find_min_in_nested_arrays(src)
+  min_array = []
   count = 0 
   while count < src.length do
     inner_count = 0
@@ -9,7 +10,8 @@ def find_min_in_nested_arrays(src)
         min = src[count][inner_count]
       end
     end
-    puts min
+    min_array.push(min)
     count += 1 
   end
+  min_array
 end
